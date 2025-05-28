@@ -1,10 +1,10 @@
 import streamlit as st
 from langchain_community.llms import Ollama
 
-st.title('🎬 Offline Movie Recommender (Ollama + LangChain)')
+st.title('Offline Movie Recommender (Ollama + LangChain)')
 
-# No API key needed!
-llm = Ollama(model="mistral")  # You can replace with "llama3", "gemma", etc.
+
+llm = Ollama(model="mistral")  
 
 def generate_recommendations(user_input):
     prompt = (
